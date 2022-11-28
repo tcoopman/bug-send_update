@@ -12,6 +12,7 @@ defmodule Bug.Application do
       BugWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: Bug.PubSub},
+      {Task.Supervisor, name: Bug.TaskSupervisor},
       # Start Finch
       {Finch, name: Bug.Finch},
       # Start the Endpoint (http/https)
