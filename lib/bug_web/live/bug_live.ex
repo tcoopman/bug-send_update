@@ -7,4 +7,9 @@ defmodule BugWeb.BugLive do
     test the bug <.live_component module={BugWeb.BugComponent} id="Id" status="before" />
     """
   end
+
+  @impl true
+  def handle_info(:something, socket) do
+    {:noreply, socket}
+  end
 end
